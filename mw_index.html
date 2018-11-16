@@ -11,6 +11,9 @@
     <![endif]-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/mwV2.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
@@ -21,110 +24,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <script>
-        $(document).ready(function() {
-            $('#10').fadeIn('slow');
-            $('#11').fadeTo(4000, 1);
-            $('#12').delay(3000).fadeTo(4000, 1);
-            $('#13').delay(6000).fadeTo(4000, 1);
-            $('#10').delay(4000).fadeTo(4000, 0);
-            $('#16').delay(10000).fadeTo(2000, 1);
-            $('#17').delay(1000).fadeTo(4000, 1);
-            $('#17').delay(5000).fadeTo(2000, 0);
 
-            //Scroll to About-Me
-            $('html,body').delay(12000).animate({
-                scrollTop: $('#gotoAbout').offset().top
-            }, 2000);
 
-            //Sliding Function
-            $(".sliding-link").click(function(e) {
-                e.preventDefault();
-                var aid = $(this).attr("href");
-                $('html,body').animate({
-                    scrollTop: $(aid).offset().top
-                }, 2000);
-            });
-        });
 
-    </script>
-
-    <style>
-        body {
-            height: 100%;
-        }
-
-        nav {
-            font-size: 1em;
-            font-family: Yu Gothic UI;
-            z-index: 1;
-        }
-
-        h1 {
-            color: black;
-            opacity: 0.8;
-            font-family: Yu Gothic UI Light;
-        }
-
-        h5 {
-            color: black;
-            opacity: 0.6;
-            font-family: Muli;
-        }
-
-        p {
-            color: black;
-            opacity: 0.8;
-            padding-top: 15px;
-            padding-left: 5px;
-        }
-
-        a {
-            color: black;
-            opacity: 0.8;
-        }
-
-        a:hover {
-            color: black;
-        }
-
-        .nav-item dropdown {
-            border-style: none;
-        }
-
-        #brandName {
-            padding-left: 80px;
-        }
-
-        #aboutMeText {
-            text-align: justify;
-        }
-
-        #gotoAbout {
-            padding-top: 20px;
-        }
-
-        footer {
-            font-family: Yu Gothic UI Light;
-            margin-top: 80px;
-        }
-
-        .footer-chevron {
-            color: red;
-            opacity: 0.8;
-        }
-
-        .navbar-light {
-            font-size: 1em;
-            border-style: none;
-        }
-
-        .dropdown-menu {
-            border: 0px;
-            font-size: 1.3em;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -132,29 +34,35 @@
         <!-- NAVBAR Start -->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent border-0">
             <a class="navbar-brand" href="https://www.michael-walsh.tech/">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" enable-background="new 0 0 60 60" xml:space="preserve" style="width:60px; height:60px; float: left;">
-            <font horiz-adv-x="1000">
-            <!-- Copyright 1992, 1994, 1997, 2000, 2004 Adobe Systems Incorporated. All rights reserved. Myriad is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
-            <font-face font-family="Yu Gothic UI Light" units-per-em="1000" underline-position="-100" underline-thickness="50"></font-face>
-            <missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M250,395l-170,255l340,0M280,350l170,255l0,-510M80,50l170,255l170,-255M50,605l170,-255l-170,-255z"></missing-glyph>
-            <glyph unicode="M" horiz-adv-x="804" d="M661,0l85,0l-42,674l-111,0l-120,-326C443,263 419,189 402,121l-3,0C382,191 359,265 331,348l-115,326l-111,0l-47,-674l83,0l18,289C165,390 170,503 172,587l2,0C193,507 220,420 252,325l109,-321l66,0l119,327C580,424 608,508 631,587l3,0C633,503 639,390 644,296z"></glyph>
-            <glyph unicode="W" horiz-adv-x="846" d="M277,0l96,351C398,438 413,504 425,571l2,0C436,503 450,437 471,351l85,-351l91,0l191,674l-89,0l-89,-340C639,250 620,175 606,101l-2,0C594,172 576,252 557,332l-82,342l-91,0l-90,-340C271,247 250,167 239,100l-2,0C225,165 207,249 187,333l-80,341l-92,0l171,-674z"></glyph>
-            </font><g><rect x="6" y="6" fill="#FFFFFF" width="468" height="468"></rect><path d="M468,12v456H12V12H468 M480,0H0v480h480V0L480,0z"></path></g>
-	        <text transform="matrix(0.952 0 0 1 263 423.1826)" font-family="&#39;Yu Gothic UI Light&#39;" font-size="110.1332px">MW</text></svg>
-            <p id="brandName" title="R == Richard :)">Michael R Walsh</p></a>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 480 480" enable-background="new 0 0 60 60" xml:space="preserve" style="width:60px; height:60px; float: left;">
+                    <font horiz-adv-x="1000">
+                        <!-- Copyright 1992, 1994, 1997, 2000, 2004 Adobe Systems Incorporated. All rights reserved. Myriad is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries. -->
+                        <font-face font-family="Yu Gothic UI Light" units-per-em="1000" underline-position="-100" underline-thickness="50"></font-face>
+                        <missing-glyph horiz-adv-x="500" d="M0,0l500,0l0,700l-500,0M250,395l-170,255l340,0M280,350l170,255l0,-510M80,50l170,255l170,-255M50,605l170,-255l-170,-255z"></missing-glyph>
+                        <glyph unicode="M" horiz-adv-x="804" d="M661,0l85,0l-42,674l-111,0l-120,-326C443,263 419,189 402,121l-3,0C382,191 359,265 331,348l-115,326l-111,0l-47,-674l83,0l18,289C165,390 170,503 172,587l2,0C193,507 220,420 252,325l109,-321l66,0l119,327C580,424 608,508 631,587l3,0C633,503 639,390 644,296z"></glyph>
+                        <glyph unicode="W" horiz-adv-x="846" d="M277,0l96,351C398,438 413,504 425,571l2,0C436,503 450,437 471,351l85,-351l91,0l191,674l-89,0l-89,-340C639,250 620,175 606,101l-2,0C594,172 576,252 557,332l-82,342l-91,0l-90,-340C271,247 250,167 239,100l-2,0C225,165 207,249 187,333l-80,341l-92,0l171,-674z"></glyph>
+                    </font>
+                    <g>
+                        <rect x="6" y="6" fill="#FFFFFF" width="468" height="468"></rect>
+                        <path d="M468,12v456H12V12H468 M480,0H0v480h480V0L480,0z"></path>
+                    </g>
+                    <text transform="matrix(0.952 0 0 1 263 423.1826)" font-family="&#39;Yu Gothic UI Light&#39;" font-size="110.1332px">MW</text>
+                </svg>
+                <p id="brandName" title="R == Richard :)">Michael R Walsh</p>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav3" aria-controls="navbarNav3" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span></button>
+                <span class="navbar-toggler-icon"></span></button>
 
             <div class="collapse navbar-collapse" id="navbarNav3">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" title="Home" href="file:///C:/Users/michael.walsh2/Desktop/index.html">Home</a>
+                        <a class="nav-link" title="Home" href="C:/Users/michael.walsh2/Desktop/Web%20Projects/V2/mw_index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link sliding-link" href="#gotoAbout" title="About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" title="Curriculum Vitae" onclick="myCV()">Curriculum Vitae</a>
+                        <a class="nav-link" title="Curriculum Vitae" href="mw_cv.html">Curriculum Vitae</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Social">Social Media</a>
@@ -185,25 +93,25 @@
     <!-- NAVBAR Finish -->
     <!-- Front Page Section Start -->
     <section style="min-height: 50%">
-        <div class="container" id="skills">
+        <div style="min-height: 800px" class="container" id="skills">
             <div class="row justify-content-center mt-5">
                 <div class="col-12 text-center">
-                    <span id="17" class="fa fa-spinner fa-spin fa-2x" style="display: none"></span>
+                    <span id="17" class="fa fa-spinner fa-spin fa-2x" style="display: none" title="wait...wait..."></span>
                 </div>
             </div>
             <div class="row text-center mt-5">
                 <div class="col-12 col-sm-4" id="11" style="display: none">
-                    <i class="fas fa-code fa-3x"></i>
+                    <i class="fas fa-code fa-3x" title="Getting there.."></i>
                     <h3><strong>Software Developer</strong></h3>
                     <p> AngularJS MVC, Javascript, C#.Net, Microsoft Server SQL, Progress ABL, PHP and GitHub.</p>
                 </div>
                 <div class="col-12 col-sm-4 pt-4 pt-sm-0" id="12" style="display: none">
-                    <i class="fas fa-wrench fa-3x"></i>
+                    <i class="fas fa-wrench fa-3x" title="old hat.."></i>
                     <h3><strong>Engineer</strong></h3>
                     <p>Project Management, Lean Six Sigma and Problem Solver.</p>
                 </div>
                 <div class="col-12 col-sm-4 pt-4 pt-sm-0" id="13" style="display: none">
-                    <i class="fab fa-html5 fa-3x"></i>
+                    <i class="fab fa-html5 fa-3x" title="Getting there.."></i>
                     <h3><strong>Web Designer</strong></h3>
                     <p>HTML, CSS, Javascript, JQuery, Bootstrap and Fontawesome</p>
                 </div>
@@ -232,10 +140,10 @@
             </div>
             <div class="row">
                 <div class="col-lg-7">
-                    <p id="aboutMeText">Hello and welcome to my portfolio website. I am a Software Developer living in Dublin, Ireland and a graduate of Dublin Business School where I received a 1st Class Honours Higher Diploma in Science in Computing (Software Development). I was a Semiconductor Process Engineer with a large multinational for 14 years and I bring these experiences and skills to software development. I have a passion for new technologies, finding the hard answers and pushing myself to just be a little bit better everyday. My core skills are focused around C#.Net, C#.Net MVC, HTML5, CSS3, JavaScript, Microsoft Server SQL, PHP and AngularJS. Outside of work, family life, travelling, golf and discovering new music, keep me happy....</p>
+                    <p id="aboutMeText">Hello and welcome to my updated and refrehsed portfolio website. I am a Software Developer living in Dublin, Ireland and a graduate of Dublin Business School where I received a 1st Class Honours Higher Diploma in Science in Computing (Software Development). I was a Semiconductor Process Engineer with a large multinational for 14 years and I bring these experiences and skills to software development. I have a passion for new technologies, finding the hard answers and pushing myself to just be a little bit better everyday. My core skills are focused around C#.Net, C#.Net MVC, HTML5, CSS3, JavaScript, Microsoft Server SQL, PHP and AngularJS. Outside of work, family life, travelling, golf and discovering new music, keeps me happy......</p>
                 </div>
-                <div class="col-lg-5 mt-4"  style="display:table-cell; vertical-align:middle; text-align:center">
-                    <img alt="image" id="imgSunset" title="Wild Atlantic Sunset County Kerry, Ireland" src="mw.png" height="400" width="400">
+                <div class="col-lg-5 mt-4" style="display:table-cell; vertical-align:middle; text-align:center">
+                    <img alt="image" id="imgSunset" title="Ólafur Arnalds - NCH Dublin Ireland, October 2018" src="mw.png" height="400" width="400">
                 </div>
             </div>
         </div>
@@ -250,6 +158,61 @@
         </div>
     </footer>
     <!-- Footer Finish -->
+
+    <script>
+        myTimer();
+
+        function myTimer() {
+            var visited = sessionStorage["visited"];
+            if (!visited) {
+                sessionStorage["visited"] = true;
+
+                $(document).ready(function() {
+
+                    $('#10').fadeIn('slow');
+                    $('#11').fadeTo(4000, 1);
+                    $('#12').delay(3000).fadeTo(4000, 1);
+                    $('#13').delay(6000).fadeTo(4000, 1);
+                    $('#10').delay(4000).fadeTo(4000, 0);
+                    $('#16').delay(10000).fadeTo(2000, 1);
+                    $('#17').delay(1000).fadeTo(4000, 1);
+                    $('#17').delay(5000).fadeTo(2000, 0);
+
+                    //Scroll to About-Me
+                    $('html,body').delay(12000).animate({
+                        scrollTop: $('#gotoAbout').offset().top
+                    }, 2000);
+
+                    //Sliding Function
+                    $(".sliding-link").click(function(e) {
+                        e.preventDefault();
+                        var aid = $(this).attr("href");
+                        $('html,body').animate({
+                            scrollTop: $(aid).offset().top
+                        }, 2000);
+                    });
+                });
+            } else {
+                $(document).ready(function() {
+                    $('#11').show();
+                    $('#12').show();
+                    $('#13').show();
+                    $('#10').show();
+                    $('#16').show();
+
+                    //Sliding Function
+                    $(".sliding-link").click(function(e) {
+                        e.preventDefault();
+                        var aid = $(this).attr("href");
+                        $('html,body').animate({
+                            scrollTop: $(aid).offset().top
+                        }, 2000);
+                    });
+                });
+            }
+        }
+
+    </script>
 
 </body>
 
