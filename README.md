@@ -3,6 +3,8 @@
 
 # Project Title
 Second version of my portfolio website. Updated CV Landing page and CV page  - Outline HTML, CSS and Javascript - FYI - Links not working. Plan to relase site March 2019.
+
+
 Some apsects of the old site I wanted to change.... 
  1. Clean up Visual design  - UXBooth.com defines visual design as: "The use of imagery, color, shapes, typography, and form to enhance usability and improve the user experience." 
  2. Use some new JS features. (ex. Spinner, timers to transition infmation).
