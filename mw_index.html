@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+    <title>Michael Walsh - Software Developer, Engineer and Web Developer</title>
     <!--[if IE 8]>
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" >
     <![endif]-->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="css/mwV2.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/1.0.2/css/froala_blocks.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
-
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/mwV2.css" />
 
-
-
+    <script src="scripts/scripts.js"></script>
 </head>
 
 <body>
@@ -103,7 +96,7 @@
                 <div class="col-12 col-sm-4" id="11" style="display: none">
                     <i class="fas fa-code fa-3x" title="Getting there.."></i>
                     <h3><strong>Software Developer</strong></h3>
-                    <p> AngularJS MVC, Javascript, C#.Net, Microsoft Server SQL, Progress ABL, PHP and GitHub.</p>
+                    <p> Javascript, C#.Net, AngularJS MVC, Progress ABL, Microsoft Server SQL, PHP and GitHub.</p>
                 </div>
                 <div class="col-12 col-sm-4 pt-4 pt-sm-0" id="12" style="display: none">
                     <i class="fas fa-wrench fa-3x" title="old hat.."></i>
@@ -116,13 +109,14 @@
                     <p>HTML, CSS, Javascript, JQuery, Bootstrap and Fontawesome</p>
                 </div>
             </div>
+            <div class="col-12 mt-5" style="font-family: Yu Gothic UI Light; text-align: center;" id = "message"> Michael Walsh - FYI JavaScript has been disbled. This site is best viewed with JavaScript enabled.</div>
             <div class="row" id="16" style="height: 400px; margin-top: 150px; display: none">
                 <div class="col-12 mt-5" style="font-family: Yu Gothic UI Light;">
                     <div class="container">
                         <h1>
-                            <blockquote style="text-align: center;">Michael Walsh MSc BSc HDip</blockquote>
+                            <blockquote style="text-align: center;">Michael Walsh MSc BSc H.Dip</blockquote>
                         </h1>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
@@ -132,15 +126,15 @@
     <!-- About Me Section Start -->
     <section class="sliding-link" data-id="13" id="gotoAbout" style="min-height: 100%">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" id="div_fixed">
                 <div class="col-12 text-center mt-5">
                     <h1>About Me..</h1>
                     <img alt="image" title="Yes, this is a blurry picture of me..." class="fdb-icon mt-5" href="#gotoTop" src=" me.jpg" height="100" width="100">
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="other_content">
                 <div class="col-lg-7">
-                    <p id="aboutMeText">Hello and welcome to my updated and refrehsed portfolio website. I am a Software Developer living in Dublin, Ireland and a graduate of Dublin Business School where I received a 1st Class Honours Higher Diploma in Science in Computing (Software Development). I was a Semiconductor Process Engineer with a large multinational for 14 years and I bring these experiences and skills to software development. I have a passion for new technologies, finding the hard answers and pushing myself to just be a little bit better everyday. My core skills are focused around C#.Net, C#.Net MVC, HTML5, CSS3, JavaScript, Microsoft Server SQL, PHP and AngularJS. Outside of work, family life, travelling, golf and discovering new music, keeps me happy......</p>
+                    <p id="aboutMeText">Hello and welcome to my updated and refreshed portfolio website. I am a Software Developer living in Dublin, Ireland and a graduate of Dublin Business School where I received a 1st Class Honours Higher Diploma in Science in Computing (Software Development). I was a Semiconductor Process Engineer with a large multinational for 14 years and I bring these experiences and skills, to software development. I have a passion for new technologies, finding the hard answers and pushing myself to just be a little bit better every day. My core skills are focused around C#.Net, C#.Net MVC, HTML5, CSS3, JavaScript, Microsoft Server SQL, PHP and AngularJS. Outside of work, family life, travelling, golf and discovering new music, keeps me happy......</p>
                 </div>
                 <div class="col-lg-5 mt-4" style="display:table-cell; vertical-align:middle; text-align:center">
                     <img alt="image" id="imgSunset" title="Ólafur Arnalds - NCH Dublin Ireland, October 2018" src="mw.png" height="400" width="400">
@@ -153,67 +147,11 @@
     <!-- Footer Start -->
     <footer>
         <div class="text-center center-block">
-            <p title="Yes i did design this.."> MW Design 2018 </p>
+            <p title="Yes i did design this.."> MW Design 2019 </p>
             <a title="Up" class="sliding-link footer-chevron" href="#gotoTop"><i class="fas fa-angle-up fa-3x"></i></a>
         </div>
     </footer>
     <!-- Footer Finish -->
-
-    <script>
-        myTimer();
-
-        function myTimer() {
-            var visited = sessionStorage["visited"];
-            if (!visited) {
-                sessionStorage["visited"] = true;
-
-                $(document).ready(function() {
-
-                    $('#10').fadeIn('slow');
-                    $('#11').fadeTo(4000, 1);
-                    $('#12').delay(3000).fadeTo(4000, 1);
-                    $('#13').delay(6000).fadeTo(4000, 1);
-                    $('#10').delay(4000).fadeTo(4000, 0);
-                    $('#16').delay(10000).fadeTo(2000, 1);
-                    $('#17').delay(1000).fadeTo(4000, 1);
-                    $('#17').delay(5000).fadeTo(2000, 0);
-
-                    //Scroll to About-Me
-                    $('html,body').delay(12000).animate({
-                        scrollTop: $('#gotoAbout').offset().top
-                    }, 2000);
-
-                    //Sliding Function
-                    $(".sliding-link").click(function(e) {
-                        e.preventDefault();
-                        var aid = $(this).attr("href");
-                        $('html,body').animate({
-                            scrollTop: $(aid).offset().top
-                        }, 2000);
-                    });
-                });
-            } else {
-                $(document).ready(function() {
-                    $('#11').show();
-                    $('#12').show();
-                    $('#13').show();
-                    $('#10').show();
-                    $('#16').show();
-
-                    //Sliding Function
-                    $(".sliding-link").click(function(e) {
-                        e.preventDefault();
-                        var aid = $(this).attr("href");
-                        $('html,body').animate({
-                            scrollTop: $(aid).offset().top
-                        }, 2000);
-                    });
-                });
-            }
-        }
-
-    </script>
-
 </body>
 
 </html>
